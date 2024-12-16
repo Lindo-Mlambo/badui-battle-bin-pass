@@ -51,6 +51,16 @@ input.bit-inp:last-child {
   position: relative;
   accent-color: var(--green);
 }
+input.bit-inp:last-child:before {
+  content: "";
+  display: block;
+  background-color: var(--green);
+  opacity: .2;
+  width: 32px;
+  height: 32px;
+  pointer-events: none;
+  border-radius: 3px;
+}
 
 .input-group {
   gap: .5em;
@@ -72,7 +82,6 @@ div.signature {
   color: rgba(0, 0, 0, .7);
   font-style: italic;
   gap: .5em;
-  /* align-items: center; */
 }
 div.signature a {
   text-decoration: none;
