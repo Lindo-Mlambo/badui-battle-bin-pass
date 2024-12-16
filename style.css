@@ -1,0 +1,97 @@
+:root {
+  --green: #22a779;
+  --red: #f92672;
+  --border-grey: #ccc;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  border: 1px solid var(--border-grey);
+  padding: 1em;
+  border-radius: .4em;
+}
+
+main {
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  height: 100%;
+}
+
+#password-inp {
+  height: 24px;
+}
+
+#bit-in-container {
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+input.bit-inp {
+  width: 24px;
+  height: 24px;
+}
+input.bit-inp:last-child {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  accent-color: var(--green);
+}
+
+.input-group {
+  gap: .5em;
+}
+
+.hint-text {
+  font-size: .7em;
+  translate: 0 -.4em;
+}
+.hint-text.success {
+  color: var(--green);
+}
+.hint-text.error {
+  color: var(--red);
+}
+
+div.signature {
+  font-size: .85em;
+  color: rgba(0, 0, 0, .7);
+  font-style: italic;
+  gap: .5em;
+  /* align-items: center; */
+}
+div.signature a {
+  text-decoration: none;
+  color: #fff;
+  padding: .1em .2em;
+  border-radius: .2em;
+  opacity: 1;
+  transition: opacity .15s ease-in;
+  font-style: normal;
+}
+div.signature a:hover {
+  opacity: .8;
+}
+.fa-heart {
+  color: var(--red);
+}
+#source-code-link {
+  background-color: #444;
+}
+#reddit-link {
+  background-color: #ff4500;
+}

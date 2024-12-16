@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bad UI Battles | Binary Password Input</title>
+    <script src="main.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="flex-column">
+      <div class="container card">
+        <div class="form-group">
+          <div class="input-group flex-column">
+            <label for="password-inp">Please enter your password</label>
+            <input type="text" id="password-inp" disabled />
+            <div class="hint-text success">Test hint text</div>
+          </div>
+          <div class="input-group flex-row" id="bit-in-container">
+            <input type="checkbox" class="bit-inp" />
+            <input type="checkbox" class="bit-inp" />
+            <input type="checkbox" class="bit-inp" />
+            <input type="checkbox" class="bit-inp" />
+            <input type="checkbox" class="bit-inp" />
+            <input type="checkbox" class="bit-inp" />
+            <input type="checkbox" class="bit-inp" />
+            <input type="checkbox" class="bit-inp" />
+          </div>
+        </div>
+      </div>
+      <div class="signature card flex-column" style="border: none">
+        <div>
+          Built with <span class="fa fa-heart"></span> by Lindo Mlambo, Source
+          code
+          <a href="" id="source-code-link" target="_blank">
+            <span class="fa fa-github"></span> | github
+          </a>
+        </div>
+        <div>
+          Inspired by reddit post:
+          <a
+            href="https://www.reddit.com/r/badUIbattles/comments/1hesql6/enter_your_password_using_ascii_binary/"
+            id="reddit-link"
+            target="_blank"
+          >
+            <span class="fa fa-reddit-alien"></span> | r/badUIbattles
+          </a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
