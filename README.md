@@ -1,2 +1,2 @@
-# badui-battle-bin-pass
-BadUI Battles inspired password input
+# BadUI Battles Binary Password Input
+BadUI Battles inspired binary password input
