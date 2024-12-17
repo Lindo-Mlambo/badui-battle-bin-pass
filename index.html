@@ -17,8 +17,15 @@
         <div class="form-group">
           <div class="input-group flex-column">
             <label for="password-inp">Please enter your password</label>
-            <input type="text" id="password-inp" disabled />
-            <div class="hint-text success">Test hint text</div>
+            <input
+              type="text"
+              id="password-inp"
+              placeholder="Enter a password..."
+              disabled
+            />
+            <div class="hint-text success error">
+              Password must be 5 or more characters long
+            </div>
           </div>
           <div class="input-group" id="bit-in-container">
             <form class="flex-row">
