@@ -36,6 +36,10 @@ main {
   height: 100%;
 }
 
+.container {
+  width: 260px
+}
+
 #password-inp {
   height: 24px;
 }

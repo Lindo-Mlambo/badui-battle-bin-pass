@@ -1,15 +1,15 @@
-const $ = (q, selectAll = true) =>
+const $ = (q, selectAll = false) =>
   selectAll ? document.querySelectorAll(q) : document.querySelector(q);
 
 window.onload = () => {
   console.log("ready...");
 
-  const bitCheckboxes = $("input.bit-inp:not(:last-child)");
-  const confirmInput = $("input.bit-inp:last-child", false);
-  const hintText = $("div.hint-text", false);
-  const passwordInput = $("#password-inp", false);
-  const form = $("form", false);
-  let hintMessage = { message: "", isError: false };
+  const bitCheckboxes = $("input.bit-inp:not(:last-child)", true);
+  const confirmInput = $("input.bit-inp:last-child");
+  const hintText = $("div.hint-text");
+  const passwordInput = $("#password-inp");
+  const form = $("form");
+  let hintMessage = { message: ".", isError: false };
 
   confirmInput.onclick = () => {
     const binaryString = [...bitCheckboxes]
@@ -53,7 +53,7 @@ const isEnterKey = (inputString) => inputString === "0001101";
 
 const getPasswordValidationResult = (passwordString) => {
   if (isPasswordCorrectLength(passwordString)) {
-    return { isError: false, message: "" };
+    return { isError: false, message: "." };
   }
 
   return {
